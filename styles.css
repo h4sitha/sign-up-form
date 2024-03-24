@@ -143,3 +143,7 @@ input:focus {
     outline: 0;
     box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.2);
 }
+
+input:not(:focus):invalid {
+    border-color: red;
+}
