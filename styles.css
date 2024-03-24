@@ -78,6 +78,7 @@ fieldset {
     padding: 70px 60px 25px 60px;
     position: relative;
     width: 100%;
+    box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.2);
 }
 
 legend {
@@ -117,6 +118,7 @@ button {
     background-color: #596D48;
     color: var(--white);
     font-weight: bold;
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.2);
 }
 
 input {
