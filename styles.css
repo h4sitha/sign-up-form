@@ -100,4 +100,12 @@ form > p {
 
 button {
     margin: 40px 40px 0 40px;
+    width: fit-content;
+    font-size: inherit;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 7px;
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
 }
