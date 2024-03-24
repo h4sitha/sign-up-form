@@ -1,5 +1,14 @@
+@font-face {
+    font-family: "Norse";
+    src: url(resources/Norse-Bold.otf);
+}
+
 body {
     margin: 0;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 main {
@@ -11,4 +20,24 @@ main > div {
     background-image: url(resources/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
     min-height: 100vh;
+}
+
+#logo {
+    display: flex;
+    height: 250px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+#logo img {
+    height: 100%;
+}
+
+#logo h1 {
+    color: white;
+    font-size: 10rem;
+    font-family: "Norse";
 }
