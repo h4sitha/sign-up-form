@@ -146,10 +146,6 @@ input:focus {
     box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.2);
 }
 
-input:not(:focus):invalid {
-    border-color: red;
-}
-
 #password-message {
     font-size: 0.8rem;
     color: red;
