@@ -17,13 +17,14 @@ main {
 }
 
 main > div {
-    width: 62.5rem;
+    /* width: 62.5rem; */
     background-image: url(resources/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex: 1;
 }
 
 #logo {
@@ -60,6 +61,7 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex: 2;
 }
 
 fieldset {
