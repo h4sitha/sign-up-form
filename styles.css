@@ -89,3 +89,15 @@ fieldset > div {
 label {
     display: block;
 }
+
+form h2 {
+    margin: 0 40px 50px 40px;
+}
+
+form > p {
+    margin: 50px 40px 0 40px;
+}
+
+button {
+    margin: 40px 40px 0 40px;
+}
