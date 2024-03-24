@@ -5,6 +5,7 @@
 
 body {
     margin: 0;
+    font-family: sans-serif;
 }
 
 * {
@@ -16,20 +17,23 @@ main {
 }
 
 main > div {
-    width: 1000px;
+    width: 62.5rem;
     background-image: url(resources/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #logo {
     display: flex;
-    height: 250px;
+    height: 15.625rem;
     background-color: hsla(0, 0%, 0%, 0.5);
-    padding: 30px;
+    padding: 1.875rem;
     align-items: center;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 12.5rem;
 }
 
 #logo img {
@@ -40,4 +44,14 @@ main > div {
     color: white;
     font-size: 10rem;
     font-family: "Norse";
+}
+
+#logo + span {
+    align-self: center;
+    margin-bottom: 0.875rem;
+    color: white;
+}
+
+span > a {
+    color: white;
 }
