@@ -7,8 +7,10 @@ const form = document.querySelector('form');
 const btn = document.querySelector('button');
 
 let areAllInputsValid = false;
+let isSubmitBtnPressed = false;
 
 btn.addEventListener('click', (e) => {
+    isSubmitBtnPressed = true;
     e.preventDefault();
     // console.log("Submit button clicked!");
     const allInputs = Array.from(otherInputs).concat(Array.from(passwords));
@@ -23,6 +25,12 @@ btn.addEventListener('click', (e) => {
     console.log(areAllInputsValid);
     if (areAllInputsValid && passwords[0].value === passwords[1].value) {
         form.submit();
+    } else {
+        for (let i=0; i < allInputs.length; i++) {
+            if (!allInputs[i].checkValidity()) {
+                otherInputBorderChange(allInputs[i]);
+            }
+        }
     }
 })
 
@@ -63,6 +71,8 @@ function otherInputBorderChange (input) {
         } else {
             input.style.borderColor = "red";
         }
+    } else if (isSubmitBtnPressed) {
+        input.style.borderColor = "red";
     } else {
         input.style.borderColor = "hsl(220, 13%, 87%)";
     }
