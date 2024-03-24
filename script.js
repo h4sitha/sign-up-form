@@ -10,6 +10,8 @@ function matchPasswords () {
         } else {
             passwordBorderChange ("red");
         }
+    } else {
+        passwordBorderChange ("hsl(220, 13%, 87%)")
     }
 }
 
