@@ -34,9 +34,13 @@ function passwordBorderChange (color) {
 }
 
 function otherInputBorderChange (input) {
-    if (input.checkValidity()) {
-        input.style.borderColor = "lightGreen";
+    if (input.value) {
+        if (input.checkValidity()) {
+            input.style.borderColor = "lightGreen";
+        } else {
+            input.style.borderColor = "red";
+        }
     } else {
-        input.style.borderColor = "red";
+        input.style.borderColor = "hsl(220, 13%, 87%)";
     }
 }
