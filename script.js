@@ -21,6 +21,9 @@ btn.addEventListener('click', (e) => {
         }
     }
     console.log(areAllInputsValid);
+    if (areAllInputsValid && passwords[0].value === passwords[1].value) {
+        form.submit();
+    }
 })
 
 for (let i=0; i < otherInputs.length; i++) {
