@@ -137,3 +137,9 @@ label {
 fieldset > div > p {
     margin: 0;
 }
+
+input:focus {
+    border-color: blue;
+    outline: 0;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.2);
+}
