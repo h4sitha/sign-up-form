@@ -75,14 +75,14 @@ fieldset {
     border: none;
     background-color: var(--white);
     margin: 0;
-    padding: 80px 60px 30px 60px;
+    padding: 70px 60px 25px 60px;
     position: relative;
     width: 100%;
 }
 
 legend {
     position: absolute;
-    top: 30px;
+    top: 25px;
     font-size: 1.5rem;
     /* font-weight: 600; */
 }
@@ -90,7 +90,9 @@ legend {
 fieldset > div {
     display: grid;
     grid-template-columns: 275px 275px;
-    column-gap: 100px;
+    column-gap: 80px;
+    row-gap: 25px;
+    margin: 10px 0 20px 0;
 }
 
 label {
@@ -121,7 +123,7 @@ input {
     padding: 6px 10px;
     width: 100%;
     font-size: inherit;
-    border: 1px solid #E5E7EB;
+    border: 1px solid hsl(220, 13%, 87%);
     border-radius: 3px;
 }
 
@@ -130,4 +132,8 @@ label {
     font-size: 0.85rem;
     letter-spacing: 0.5px;
     margin-bottom: 5px;
+}
+
+fieldset > div > p {
+    margin: 0;
 }
