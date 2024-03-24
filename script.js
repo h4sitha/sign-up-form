@@ -6,11 +6,21 @@ const otherInputs = document.querySelectorAll('input:not(.error)');
 const form = document.querySelector('form');
 const btn = document.querySelector('button');
 
+let areAllInputsValid = false;
+
 btn.addEventListener('click', (e) => {
     e.preventDefault();
-    console.log("Submit button clicked!");
+    // console.log("Submit button clicked!");
     const allInputs = Array.from(otherInputs).concat(Array.from(passwords));
-    console.log(allInputs);
+    for (let i=0; i < allInputs.length; i++) {
+        if (allInputs[i].checkValidity()) {
+            areAllInputsValid = true;
+        } else {
+            areAllInputsValid = false;
+            break;
+        }
+    }
+    console.log(areAllInputsValid);
 })
 
 for (let i=0; i < otherInputs.length; i++) {
