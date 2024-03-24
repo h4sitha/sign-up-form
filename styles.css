@@ -1,3 +1,8 @@
+:root {
+    --white: hsl(0, 0%, 99%);
+    --light-gray: hsl(0, 0%, 94%);
+}
+
 @font-face {
     font-family: "Norse";
     src: url(resources/Norse-Bold.otf);
@@ -42,7 +47,7 @@ main > div {
 }
 
 #logo h1 {
-    color: white;
+    color: var(--white);
     font-size: 10rem;
     font-family: "Norse";
 }
@@ -50,11 +55,11 @@ main > div {
 #logo + span {
     align-self: center;
     margin-bottom: 0.875rem;
-    color: white;
+    color: var(--white);
 }
 
 span > a {
-    color: white;
+    color: var(--white);
 }
 
 form {
@@ -62,12 +67,13 @@ form {
     flex-direction: column;
     justify-content: center;
     flex: 2;
+    background-color: var(--light-gray);
 }
 
 fieldset {
     appearance: none;
     border: none;
-    background-color: lightblue;
+    background-color: var(--white);
     margin: 0;
     padding: 80px 60px 30px 60px;
     position: relative;
@@ -107,7 +113,7 @@ button {
     border: none;
     border-radius: 7px;
     background-color: #596D48;
-    color: white;
+    color: var(--white);
     font-weight: bold;
 }
 
@@ -115,4 +121,6 @@ input {
     padding: 6px 10px;
     width: 100%;
     font-size: inherit;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
 }
