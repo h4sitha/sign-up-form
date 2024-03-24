@@ -149,3 +149,15 @@ input:focus {
 input:not(:focus):invalid {
     border-color: red;
 }
+
+#password-message {
+    font-size: 0.8rem;
+    color: red;
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+}
+
+fieldset p:last-of-type {
+    position: relative;
+}
