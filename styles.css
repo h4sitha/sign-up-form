@@ -141,7 +141,7 @@ fieldset > div > p {
 }
 
 input:focus {
-    border-color: blue;
+    border-color: blue !important;
     outline: 0;
     box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.2);
 }
