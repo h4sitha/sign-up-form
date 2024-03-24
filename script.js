@@ -34,5 +34,9 @@ function passwordBorderChange (color) {
 }
 
 function otherInputBorderChange (input) {
-    console.log(input);
+    if (input.checkValidity()) {
+        input.style.borderColor = "lightGreen";
+    } else {
+        input.style.borderColor = "red";
+    }
 }
