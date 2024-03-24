@@ -55,3 +55,9 @@ main > div {
 span > a {
     color: white;
 }
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
