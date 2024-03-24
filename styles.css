@@ -1,6 +1,14 @@
-/* body {
-    background: url(./resources/halie-west-25xggax4bSA-unsplash.jpg);
-    background-size: contain;
-    min-height: 100vh;
+body {
     margin: 0;
-} */
+}
+
+main {
+    display: flex;
+}
+
+main > div {
+    width: 1000px;
+    background-image: url(resources/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
