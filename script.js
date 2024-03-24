@@ -3,11 +3,14 @@ const passwordMessage = document.querySelector('#password-message');
 
 const otherInputs = document.querySelectorAll('input:not(.error)');
 
+const form = document.querySelector('form');
 const btn = document.querySelector('button');
 
 btn.addEventListener('click', (e) => {
     e.preventDefault();
     console.log("Submit button clicked!");
+    const allInputs = Array.from(otherInputs).concat(Array.from(passwords));
+    console.log(allInputs);
 })
 
 for (let i=0; i < otherInputs.length; i++) {
