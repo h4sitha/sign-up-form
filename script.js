@@ -3,6 +3,13 @@ const passwordMessage = document.querySelector('#password-message');
 
 const otherInputs = document.querySelectorAll('input:not(.error)');
 
+const btn = document.querySelector('button');
+
+btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    console.log("Submit button clicked!");
+})
+
 for (let i=0; i < otherInputs.length; i++) {
     otherInputs[i].addEventListener('input', () => {
         otherInputBorderChange(otherInputs[i]);
