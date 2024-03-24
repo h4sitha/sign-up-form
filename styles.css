@@ -61,3 +61,19 @@ form {
     flex-direction: column;
     justify-content: center;
 }
+
+fieldset {
+    appearance: none;
+    border: none;
+    background-color: lightblue;
+    margin: 0;
+    padding: 80px 40px 30px 40px;
+    position: relative;
+}
+
+legend {
+    position: absolute;
+    top: 30px;
+    font-size: 1.5rem;
+    /* font-weight: 600; */
+}
